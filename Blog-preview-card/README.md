@@ -1,1 +1,1 @@
-live url:https://bendexdev07.github.io/Blog-preview-card/
+
