@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*, *::before, *::after {
+  box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+h1, h2 ,h3 {
+    line-height:1;
+}
+:root {
+    /* colors*/
+
+        --Green500: hsl(158, 36%, 37%) ;
+        --Green700: hsl(158, 42%, 18%) ;
+        --Black: hsl(212, 21%, 14%) ;
+        --Grey: hsl(228, 12%, 48%) ;
+        --cream: hsl(30, 38%, 92%) ; 
+        --White: hsl(0, 0%, 100%) ;
+
+
+/* fonts*/
+--ff-sans: 'Montserrat', sans-serif; 
+--ff-serif: 'Fraunces', serif;
+--fw-regular: 500;
+--fw-bold: 700;
+}
+@media(min-width: 600px){
+  .container{
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+  }
+}
+
+img, picture, video, canvas, svg {
+     --content-padding: 2rem;
+    max-width: 100%;
+  height: auto;
+  display: block;}
+body{
+    font-family: var(--ff-sans);
+    background-color: var(--cream);
+    font-weight: 500;
+    font-size: .875rem;
+    color: var(--Grey);
+    display: grid;
+    place-content: center;
+    margin: 1rem;
+    line-height: 1.7;
+
+}
+button{
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex ;
+    border: 0;
+    justify-content: center;
+    gap:.5rem ;
+    align-items: center;
+
+     
+    padding:.75rem  1.5rem;
+    background-color: var(--Green500);
+    color: var(--White);
+    font-weight: var(--fw-bold);
+     
+
+}
+button:is(:hover, :focus){
+    background-color: var(--Green700);
+
+}
+button[data-icon="shopping"]::before{
+    content: url('./images/icon-cart.svg');
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(150deg) brightness(0.8);
+}
+.flex-group{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container{
+    --content-padding: 1.5rem;
+    --content-spacing:2rem ;
+    background-color: var(--White);
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.content{
+    padding: var(--content-padding);
+    display: grid;
+    gap: var(--content-spacing);
+
+
+}
+.Perfume{
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-size: .825rem;
+}
+.product-title{
+    font-size: 2rem;
+    font-family: var(--ff-serif);
+    color: var(--Black);
+}
+.product-price{
+    font-size: 2rem;
+    font-family: var(--ff-serif);
+    color: var(--Green500);
+}

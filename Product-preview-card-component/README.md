@@ -1,0 +1,1 @@
+live site url :https://bendexdev07.github.io/Product-preview-card-component/
