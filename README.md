@@ -1,1 +1,1 @@
-this my attenps solving frontendmentor chllalenges 
+this my attemps solving frontendmentor chllalenges 
